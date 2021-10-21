@@ -1,0 +1,391 @@
+/* Normalize and size */
+
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header (Banner) */
+
+.banner {
+  display: flex;
+  height: 15vh;
+  background-color: #cd113b;
+}
+
+.logo-img {
+  position: absolute;
+  left: 3.5vw;
+  width: 15vh;
+}
+
+/* Body */
+
+body {
+  background: url(../assets/players.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-position: 30% 0%;
+}
+
+/* Main Section */
+
+main {
+  margin-top: 1vh;
+}
+
+.mainSection {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  margin: 2vh 1vw;
+}
+
+/* Navegation */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cd113b;
+  height: 4vh;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  width: 10%;
+  padding-top: 1vh;
+  height: 100%;
+  flex: 1;
+}
+
+nav a:hover {
+  background-color: rgb(224, 75, 108);
+}
+
+.btn-active {
+  background-color: rgb(224, 75, 108);
+}
+
+/* Central Info (Home / About / Contact) */
+
+div.infoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-bottom: 1vh;
+}
+
+div.contactInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.contactInfo p {
+  margin: 1vh;
+}
+
+div.centralInfo {
+  margin-bottom: 2vh;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Game's (Table) */
+
+.centralTable {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.centralTable div {
+  margin: 1vh 1vw;
+}
+
+.h5Saturday {
+  text-decoration: underline;
+  color: white;
+}
+
+.game_infoAditional,
+h4,
+p {
+  display: inline-block;
+}
+
+.game_contactEmail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game_contactEmail a {
+  color: white;
+  font-weight: bold;
+}
+
+table,
+th,
+td {
+  margin: 2vh auto;
+  padding: 0.9vh;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  text-align: center;
+  font-weight: 600;
+}
+
+.trHead {
+  background-color: rgba(5, 55, 66, 0.6);
+}
+
+.trOne {
+  background-color: rgba(57, 162, 219, 0.6);
+}
+
+.trTwo {
+  background-color: rgba(162, 219, 250, 0.6);
+}
+
+/* Rules page */
+
+.h3Rules {
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.centralInfo ul,
+ol {
+  margin: 1vh 2vw;
+}
+
+li {
+  color: white;
+  font-size: 19px;
+  margin-bottom: 1vh;
+}
+
+strong {
+  color: black;
+  margin-right: 0.5vw;
+}
+
+.alphaList {
+  list-style: lower-alpha;
+  color: white;
+}
+
+.circle {
+  list-style: none;
+}
+
+/* Title, subtitles <h1, 2, 3> and <p>  */
+
+h1 {
+  color: #e2a0af;
+  font-weight: bold;
+  margin: auto;
+  font-size: 4vh;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+h2 {
+  text-align: center;
+  background-color: rgb(224, 75, 108);
+}
+
+h3 {
+  font-size: 2vh;
+}
+
+p {
+  color: white;
+  font-size: 1.5vh;
+  font-weight: bold;
+}
+
+/* Forms */
+
+form {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+}
+
+form legend {
+  color: black;
+  margin-bottom: 0.5vh;
+}
+
+.formContainer {
+  width: 35%;
+  margin: 5vh auto;
+}
+
+.horizontalForm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+
+.adressForm {
+  margin-bottom: 1vh;
+}
+
+.adressForm input {
+  width: 79.3%;
+}
+
+.columnForm {
+  display: flex;
+}
+
+.columnForm div {
+  flex-direction: column;
+  margin-right: 1.5vw;
+}
+
+.formtitle {
+  margin: 1vh 0;
+  color: black;
+}
+
+fieldset p {
+  margin: 1vh;
+}
+
+div.submitContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-submit {
+  margin: 1vh 0vw;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  width: 15%;
+  height: 3vh;
+  text-align: center;
+  background-color: #cd113b;
+}
+
+.btn-submit:hover {
+  color: rgb(224, 75, 108);
+}
+
+/* Footer */
+
+footer {
+  background-color: #cd113b;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  font-weight: bold;
+  margin-left: 3.5vw;
+}
+
+/* Mediaqueries */
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .logo-img {
+    width: 9vh;
+    position: relative;
+    left: 40%;
+    top: 1vh;
+    order: 0;
+  }
+
+  h1 {
+    font-size: 2.9vh;
+    order: 1;
+  }
+
+  nav {
+    height: 3.7vh;
+  }
+
+  nav a {
+    font-size: 1vh;
+  }
+
+  body {
+    background: url(../assets/players.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: 18% 50%;
+  }
+
+  .mainSection {
+    width: 100vw;
+  }
+
+  .formContainer {
+    width: 95%;
+  }
+
+  .centralTable {
+    width: 100%;
+  }
+
+  table,
+  th,
+  td {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    width: 65vw;
+  }
+
+  iframe {
+    margin: auto;
+  }
+
+  tr,
+  td {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .trHead {
+    display: none;
+  }
+
+  .trOne {
+    background-color: rgba(57, 162, 219, 0.6);
+  }
+
+  .trTwo {
+    background-color: rgba(162, 219, 250, 0.6);
+  }
+
+  .centralInfo {
+    width: 100%;
+    padding: 1vh 3vw;
+  }
+
+  footer {
+    height: 3vh;
+  }
+}
